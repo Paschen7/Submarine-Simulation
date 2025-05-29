@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL Su Altı Keşfi ve Hazine Avı</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="ui">
+            <h3>Su Altı Keşfi</h3>
+            <div>Derinlik: <span id="depth">0</span>m</div>
+            <div>Işık Gücü: <span id="lightPower">100</span>%</div>
+            <div>Toplanan İnciler: <span id="pearls">0</span>/12</div>
+            <div>Hazine Durumu: <span id="treasureStatus">Bulunamadı</span></div>
+        </div>
+        
+        <div id="controls">
+            <strong>Kontroller (FPS Tarzı):</strong><br>
+            W: İleri (Mouse Yönü)<br>
+            S: Geri (Mouse Yönü)<br>
+            A: Sola Yan (Mouse Yönü)<br>
+            D: Sağa Yan (Mouse Yönü)<br>
+            Q/E: Yukarı/Aşağı<br>
+            Mouse: Bakış & Yön Kontrolü<br>
+            1/2: Işık Gücü<br>
+            3/4: Mouse Hassasiyeti<br>
+            Space: Etkileşim<br>
+            Click: İnci Al/Bırak (Basit Sistem)<br>
+            ESC: Mouse Kilidini Aç
+        </div>
+        
+        <div id="interaction">
+            <span id="interactionText">Space'e basın</span>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
